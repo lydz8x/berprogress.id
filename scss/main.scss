@@ -1,0 +1,85 @@
+@import "fonts";
+
+// styles
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bg {
+    position: absolute;
+    width: 490px;
+    height: 490px;
+    margin-top: 130px;
+    margin-left: 600px;
+}
+
+// navbar
+
+.custom-nav {
+    .navbar-brand {
+        img {
+            width: 250px;
+            height: 100px;
+        }
+    }
+
+    #navbarNav {
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    color: black;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    margin-left: 1.2em;
+                    transition: 2s color ease-in-out;
+
+                    &:hover::after {
+                        content: "";
+                        display: block;
+                        border-bottom: 3px solid #0b63dc;
+                        width: 50%;
+                        margin: auto;
+                        padding-bottom: 5px;
+                        margin-bottom: -8px;
+                    }
+                }
+
+                .nav-mg {
+                    margin-left: 5em;
+                }
+
+                .custom-btn {
+                    color: white;
+                    border-radius: 3em;
+                    border: none;
+                    padding: .1em 1em;
+                }
+            }
+        }
+    }
+}
+
+// custom section
+
+.custom-section {
+    margin-top: 3em;
+
+    h2 {
+        font-family: 'Viga', sans-serif;
+        font-size: 2.3rem;
+    }
+
+    p {
+        white-space: nowrap;
+        font-weight: 400;
+        font-size: 18px;
+        margin-top: 4em;
+    }
+
+    a {
+        font-family: 'Viga', sans-serif;
+        display: inline-block;
+        border-radius: .8em;
+        margin-left: 20em;
+    }
+}
