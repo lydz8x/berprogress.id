@@ -3,14 +3,20 @@
 // styles
 body {
     font-family: 'Montserrat', sans-serif;
-}
 
-.bg {
-    position: absolute;
-    width: 490px;
-    height: 490px;
-    margin-top: 130px;
-    margin-left: 600px;
+    &:before {
+        content: "";
+        background-image: url(../image/login.png);
+        background-position: 27% 67%;
+        background-repeat: no-repeat;
+        background-size: 35vmax;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+    }
 }
 
 // navbar
@@ -58,27 +64,7 @@ body {
     }
 }
 
-// custom section
-
-.custom-section {
-    margin-top: 3em;
-
-    h2 {
-        font-family: 'Viga', sans-serif;
-        font-size: 2.3rem;
-    }
-
-    p {
-        white-space: nowrap;
-        font-weight: 400;
-        font-size: 18px;
-        margin-top: 4em;
-    }
-
-    a {
-        font-family: 'Viga', sans-serif;
-        display: inline-block;
-        border-radius: .8em;
-        margin-left: 20em;
-    }
+// form login
+.login-form {
+    position: relative;
 }

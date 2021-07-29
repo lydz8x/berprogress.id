@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Viga&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+}
+body:before {
+  content: "";
+  background-image: url(../image/login.png);
+  background-position: 27% 67%;
+  background-repeat: no-repeat;
+  background-size: 35vmax;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.custom-nav .navbar-brand img {
+  width: 250px;
+  height: 100px;
+}
+.custom-nav #navbarNav .navbar-nav .nav-item .nav-link {
+  color: black;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-left: 1.2em;
+  transition: 2s color ease-in-out;
+}
+.custom-nav #navbarNav .navbar-nav .nav-item .nav-link:hover::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid #0b63dc;
+  width: 50%;
+  margin: auto;
+  padding-bottom: 5px;
+  margin-bottom: -8px;
+}
+.custom-nav #navbarNav .navbar-nav .nav-item .nav-mg {
+  margin-left: 5em;
+}
+.custom-nav #navbarNav .navbar-nav .nav-item .custom-btn {
+  color: white;
+  border-radius: 3em;
+  border: none;
+  padding: 0.1em 1em;
+}
+
+.login-form {
+  position: relative;
+}
+
+/*# sourceMappingURL=login.css.map */
