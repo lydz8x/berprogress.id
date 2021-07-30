@@ -7,7 +7,7 @@ body:before {
   background-image: url(../image/login.png);
   background-position: 27% 67%;
   background-repeat: no-repeat;
-  background-size: 35vmax;
+  background-size: 30vmax;
   position: absolute;
   top: 0;
   left: 0;
@@ -46,8 +46,62 @@ body:before {
   padding: 0.1em 1em;
 }
 
-.login-form {
-  position: relative;
+.form-log {
+  margin-right: -500px;
+  margin-top: 10px;
+}
+.form-log .log-in-form .title {
+  font-family: "Viga", sans-serif;
+  margin-bottom: 50px;
+  margin-left: 80px;
+}
+.form-log .log-in-form .input-field {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  padding: 0 0.4rem;
+}
+.form-log .log-in-form .input-field input {
+  background: none;
+  outline: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  line-height: 1;
+  padding-left: 0.8em;
+  margin: 25px 0;
+  opacity: 0.8;
+}
+.form-log .log-in-form .input-field input:focus {
+  opacity: 1;
+  border-bottom: solid black;
+  transition: 0.2s;
+}
+.form-log .log-in-form .input-field .check {
+  margin-top: -20px;
+}
+.form-log .log-in-form .input-field label {
+  font-size: 0.8rem;
+  color: gray;
+  margin-left: 10px;
+}
+.form-log .btn-login {
+  font-family: "Viga", sans-serif;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0 15px;
+  text-transform: uppercase;
+}
+.form-log a.to-signup {
+  font-size: 0.7rem;
+  color: gray;
+  text-decoration: underline;
+}
+.form-log a.to-signup:hover {
+  color: black;
 }
 
 /*# sourceMappingURL=login.css.map */
