@@ -1,0 +1,153 @@
+@import "fonts";
+
+// Style
+body {
+    font-family: 'Montserrat', sans-serif;
+
+    &:before {
+        content: "";
+        background-image: url(../image/filing-system-pana.png);
+        background-position: 75% 60%;
+        background-repeat: no-repeat;
+        background-size: 30vmax;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+    }
+}
+
+// navbar
+.custom-nav {
+    .navbar-brand {
+        img {
+            width: 250px;
+            height: 100px;
+        }
+    }
+
+    #navbarNav {
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    color: black;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    margin-left: 1.2em;
+                    transition: 2s color ease-in-out;
+
+                    &:hover::after {
+                        content: "";
+                        display: block;
+                        border-bottom: 3px solid #0b63dc;
+                        width: 50%;
+                        margin: auto;
+                        padding-bottom: 5px;
+                        margin-bottom: -8px;
+                    }
+                }
+
+                .nav-mg {
+                    margin-left: 5em;
+                }
+
+                .custom-btn {
+                    color: white;
+                    border-radius: 20px;
+                    border: none;
+                    padding: .1em 1em;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                }
+            }
+        }
+    }
+}
+
+// form login
+.form-up {
+    margin-left: 300px;
+    margin-top: 10px;
+
+    .sign-up-form {
+        .title {
+            font-family: 'Viga', sans-serif;
+            margin-bottom: 20px;
+            margin-left: 80px;
+            text-transform: uppercase;
+        }
+
+        .input-field {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: .9rem;
+            padding: 0 0.4rem;
+
+            input {
+                background: none;
+                outline: none;
+                border-top: none;
+                border-right: none;
+                border-left: none;
+                line-height: 1;
+                padding-left: .8em;
+                margin: 15px 0;
+                opacity: .8;
+
+                &:focus {
+                    opacity: 1;
+                    border-bottom: solid black;
+                    transition: .2s;
+                }
+            }
+
+            .check {
+                margin-top: -20px;
+            }
+
+            label {
+                font-size: .8rem;
+                color: gray;
+                margin-left: 10px;
+            }
+
+            a {
+                font-size: .7rem;
+                color: gray;
+                text-decoration: underline;
+
+                &:hover {
+                    color: black;
+                }
+            }
+
+            .check,
+            label,
+            a {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .btn-login {
+        font-family: 'Viga', sans-serif;
+        font-size: 1.1rem;
+        border-radius: 10px;
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 0 15px;
+        text-transform: uppercase;
+    }
+
+    a.to-login {
+        font-size: .7rem;
+        color: gray;
+        text-decoration: underline;
+
+        &:hover {
+            color: black;
+        }
+    }
+}
