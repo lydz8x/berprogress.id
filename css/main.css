@@ -1,14 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Viga&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Viga&display=swap");
 body {
   font-family: "Montserrat", sans-serif;
 }
-
-.bg {
+body:before {
+  content: "";
+  background-image: url(../image/learning-amico.png);
+  background-position: 75% 60%;
+  background-repeat: no-repeat;
+  background-size: 30vmax;
   position: absolute;
-  width: 490px;
-  height: 490px;
-  margin-top: 130px;
-  margin-left: 600px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
 }
 
 .custom-nav .navbar-brand img {
@@ -42,23 +47,26 @@ body {
 }
 
 .custom-section {
-  margin-top: 3em;
+  margin-top: 200px;
+  margin-left: 50px;
 }
 .custom-section h2 {
   font-family: "Viga", sans-serif;
-  font-size: 2.3rem;
+  font-size: 3rem;
+  white-space: nowrap;
+  line-height: 70px;
 }
 .custom-section p {
   white-space: nowrap;
   font-weight: 400;
-  font-size: 18px;
-  margin-top: 4em;
+  font-size: 1rem;
+  margin-top: 2em;
 }
 .custom-section a {
   font-family: "Viga", sans-serif;
   display: inline-block;
   border-radius: 0.8em;
-  margin-left: 20em;
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */
