@@ -4,8 +4,8 @@ body {
 }
 body:before {
   content: "";
-  background-image: url(../image/learning-amico.png);
-  background-position: 75% 60%;
+  background-image: url(../image/contact.png);
+  background-position: 27% 67%;
   background-repeat: no-repeat;
   background-size: 30vmax;
   position: absolute;
@@ -41,32 +41,35 @@ body:before {
 }
 .custom-nav #navbarNav .navbar-nav .nav-item .custom-btn {
   color: white;
-  border-radius: 3em;
+  border-radius: 4em;
   border: none;
   padding: 0.1em 1em;
 }
 
-.custom-section {
-  margin-top: 50px;
-  margin-left: 50px;
+.form {
+  position: absolute;
+  margin-left: 50%;
+  margin-top: 60px;
 }
-.custom-section h2 {
-  font-family: "Viga", sans-serif;
-  font-size: 3rem;
-  white-space: nowrap;
-  line-height: 70px;
-}
-.custom-section p {
-  white-space: nowrap;
-  font-weight: 400;
-  font-size: 1rem;
-  margin-top: 2em;
-}
-.custom-section a {
-  font-family: "Viga", sans-serif;
-  display: inline-block;
-  border-radius: 0.8em;
+.form .input-field {
   margin-top: 20px;
 }
+.form .input-field input,
+.form .input-field textarea {
+  border-radius: 12px;
+  padding: 3px 10px;
+}
+.form a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  padding: 3px 20px;
+  font-weight: 700;
+  color: white !important;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.7em;
+}
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=contact.css.map */

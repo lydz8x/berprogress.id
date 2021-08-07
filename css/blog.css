@@ -2,19 +2,6 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
-body:before {
-  content: "";
-  background-image: url(../image/learning-amico.png);
-  background-position: 75% 60%;
-  background-repeat: no-repeat;
-  background-size: 30vmax;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-}
 
 .custom-nav .navbar-brand img {
   width: 250px;
@@ -46,27 +33,12 @@ body:before {
   padding: 0.1em 1em;
 }
 
-.custom-section {
-  margin-top: 50px;
-  margin-left: 50px;
-}
-.custom-section h2 {
+p {
   font-family: "Viga", sans-serif;
-  font-size: 3rem;
-  white-space: nowrap;
-  line-height: 70px;
-}
-.custom-section p {
-  white-space: nowrap;
-  font-weight: 400;
-  font-size: 1rem;
-  margin-top: 2em;
-}
-.custom-section a {
-  font-family: "Viga", sans-serif;
-  display: inline-block;
-  border-radius: 0.8em;
-  margin-top: 20px;
+  font-weight: bold;
+  font-size: 1.7rem;
+  text-align: center;
+  margin-top: 200px;
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=blog.css.map */
