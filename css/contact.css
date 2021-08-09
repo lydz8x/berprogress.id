@@ -47,7 +47,6 @@ body:before {
 }
 
 .form {
-  position: absolute;
   margin-left: 50%;
   margin-top: 60px;
 }
@@ -60,9 +59,7 @@ body:before {
   padding: 3px 10px;
 }
 .form a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-left: 43px;
   margin-top: 30px;
   padding: 3px 20px;
   font-weight: 700;
@@ -70,6 +67,37 @@ body:before {
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 0.7em;
+}
+
+.footer {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: white;
+  margin-top: 100px;
+  background: black;
+}
+.footer a {
+  text-decoration: none;
+}
+.footer a i {
+  margin-left: 20px;
+  margin-top: 40px;
+}
+.footer p {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 30px;
+}
+.footer p span {
+  font-size: 13px;
+}
+.footer .cp-right {
+  font-size: 12px;
+  text-transform: inherit;
+  font-weight: normal;
+  margin-top: 50px;
+  word-spacing: inherit;
 }
 
 /*# sourceMappingURL=contact.css.map */

@@ -145,7 +145,34 @@
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     color: white;
-    height: 100px;
     margin-top: 100px;
     background: black;
+
+    a {
+        text-decoration: none;
+
+        i {
+            margin-left: 20px;
+            margin-top: 40px;
+        }
+    }
+
+    p {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1rem;
+        margin-top: 30px;
+
+        span {
+            font-size: 13px;
+        }
+    }
+
+    .cp-right {
+        font-size: 12px;
+        text-transform: inherit;
+        font-weight: normal;
+        margin-top: 50px;
+        word-spacing: inherit;
+    }
 }

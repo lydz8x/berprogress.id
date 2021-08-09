@@ -116,9 +116,31 @@
   font-family: "Montserrat", sans-serif;
   text-align: center;
   color: white;
-  height: 100px;
   margin-top: 100px;
   background: black;
+}
+.footer a {
+  text-decoration: none;
+}
+.footer a i {
+  margin-left: 20px;
+  margin-top: 40px;
+}
+.footer p {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 30px;
+}
+.footer p span {
+  font-size: 13px;
+}
+.footer .cp-right {
+  font-size: 12px;
+  text-transform: inherit;
+  font-weight: normal;
+  margin-top: 50px;
+  word-spacing: inherit;
 }
 
 /*# sourceMappingURL=about.css.map */

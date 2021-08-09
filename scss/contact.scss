@@ -68,7 +68,6 @@ body {
 // form
 
 .form {
-    position: absolute;
     margin-left: 50%;
     margin-top: 60px;
 
@@ -83,9 +82,7 @@ body {
     }
 
     a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        margin-left: 43px;
         margin-top: 30px;
         padding: 3px 20px;
         font-weight: 700;
@@ -93,5 +90,41 @@ body {
         text-decoration: none;
         text-transform: uppercase;
         border-radius: .7em;
+    }
+}
+
+.footer {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+    background: black;
+
+    a {
+        text-decoration: none;
+
+        i {
+            margin-left: 20px;
+            margin-top: 40px;
+        }
+    }
+
+    p {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1rem;
+        margin-top: 30px;
+
+        span {
+            font-size: 13px;
+        }
+    }
+
+    .cp-right {
+        font-size: 12px;
+        text-transform: inherit;
+        font-weight: normal;
+        margin-top: 50px;
+        word-spacing: inherit;
     }
 }

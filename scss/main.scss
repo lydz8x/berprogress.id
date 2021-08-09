@@ -16,6 +16,11 @@ body {
         bottom: 0;
         right: 0;
         z-index: -1;
+
+        @media screen and (max-width: 992px) {
+            opacity: .5;
+            background-size: 45vmax;
+        }
     }
 }
 
@@ -23,8 +28,9 @@ body {
 .custom-nav {
     .navbar-brand {
         img {
-            width: 250px;
-            height: 100px;
+            width: 60px;
+            height: 60px;
+            margin-left: 30px;
         }
     }
 
@@ -59,7 +65,36 @@ body {
                     border: none;
                     padding: .1em 1em;
                 }
+
+                @media screen and (max-width: 992px) {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #00559E;
+
+                    .nav-link {
+                        font-family: 'Viga', sans-serif;
+                        font-weight: 400;
+                        color: white !important;
+                        text-transform: none;
+
+                        &:hover::after {
+                            content: "";
+                            opacity: 0;
+                        }
+                    }
+
+                    .custom-btn {
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        margin-top: 20px;
+                        margin-bottom: 5px;
+                    }
+                }
             }
+
+
         }
     }
 }
