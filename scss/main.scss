@@ -1,4 +1,5 @@
 @import "fonts";
+@import "mixins";
 
 // styles
 body {
@@ -21,82 +22,17 @@ body {
             opacity: .5;
             background-size: 45vmax;
         }
+
+        @media screen and (max-width: 390px) {
+            background-position: center 120px;
+            opacity: .2;
+        }
     }
 }
 
 // navbar
 .custom-nav {
-    .navbar-brand {
-        img {
-            width: 60px;
-            height: 60px;
-            margin-left: 30px;
-        }
-    }
-
-    #navbarNav {
-        .navbar-nav {
-            .nav-item {
-                .nav-link {
-                    color: black;
-                    text-transform: uppercase;
-                    font-weight: 700;
-                    margin-left: 1.2em;
-                    transition: 2s color ease-in-out;
-
-                    &:hover::after {
-                        content: "";
-                        display: block;
-                        border-bottom: 3px solid #0b63dc;
-                        width: 50%;
-                        margin: auto;
-                        padding-bottom: 5px;
-                        margin-bottom: -8px;
-                    }
-                }
-
-                .nav-mg {
-                    margin-left: 5em;
-                }
-
-                .custom-btn {
-                    color: white;
-                    border-radius: 3em;
-                    border: none;
-                    padding: .1em 1em;
-                }
-
-                @media screen and (max-width: 992px) {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    background-color: #00559E;
-
-                    .nav-link {
-                        font-family: 'Viga', sans-serif;
-                        font-weight: 400;
-                        color: white !important;
-                        text-transform: none;
-
-                        &:hover::after {
-                            content: "";
-                            opacity: 0;
-                        }
-                    }
-
-                    .custom-btn {
-                        font-family: 'Montserrat', sans-serif;
-                        font-weight: 600;
-                        text-transform: uppercase;
-                        margin-top: 20px;
-                        margin-bottom: 5px;
-                    }
-                }
-            }
-
-
-        }
-    }
+    @include nav;
 }
 
 // custom section
@@ -124,5 +60,24 @@ body {
         display: inline-block;
         border-radius: .8em;
         margin-top: 20px;
+    }
+}
+
+
+// util
+
+@media screen and (max-width: 390px) {
+    .custom-section {
+        h2 {
+            font-size: 2.2rem;
+            line-height: 45px;
+            white-space: normal;
+        }
+
+        p {
+            white-space: normal;
+            font-size: .8rem;
+            font-weight: 600;
+        }
     }
 }

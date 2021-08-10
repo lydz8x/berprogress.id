@@ -1,49 +1,9 @@
 @import "fonts";
+@import "mixins";
 
 // navbar
 .custom-nav {
-    .navbar-brand {
-        img {
-            width: 250px;
-            height: 100px;
-        }
-    }
-
-    #navbarNav {
-        .navbar-nav {
-            .nav-item {
-                .nav-link {
-                    font-family: 'Montserrat', sans-serif;
-                    color: black;
-                    text-transform: uppercase;
-                    font-weight: 700;
-                    margin-left: 1.2em;
-                    transition: 2s color ease-in-out;
-
-                    &:hover::after {
-                        content: "";
-                        display: block;
-                        border-bottom: 3px solid #0b63dc;
-                        width: 50%;
-                        margin: auto;
-                        padding-bottom: 5px;
-                        margin-bottom: -8px;
-                    }
-                }
-
-                .nav-mg {
-                    margin-left: 5em;
-                }
-
-                .custom-btn {
-                    color: white;
-                    border-radius: 3em;
-                    border: none;
-                    padding: .1em 1em;
-                }
-            }
-        }
-    }
+    @include nav;
 }
 
 // Jumbotron
@@ -53,7 +13,6 @@
     background-size: cover;
     height: 450px;
     position: relative;
-    margin-top: 120px;
     font-family: 'Montserrat', sans-serif;
 
     .container {

@@ -21,10 +21,16 @@ body:before {
     background-size: 45vmax;
   }
 }
+@media screen and (max-width: 390px) {
+  body:before {
+    background-position: center 120px;
+    opacity: 0.2;
+  }
+}
 
 .custom-nav .navbar-brand img {
-  width: 60px;
-  height: 60px;
+  width: 170px;
+  height: 50px;
   margin-left: 30px;
 }
 .custom-nav #navbarNav .navbar-nav .nav-item .nav-link {
@@ -99,6 +105,19 @@ body:before {
   display: inline-block;
   border-radius: 0.8em;
   margin-top: 20px;
+}
+
+@media screen and (max-width: 390px) {
+  .custom-section h2 {
+    font-size: 2.2rem;
+    line-height: 45px;
+    white-space: normal;
+  }
+  .custom-section p {
+    white-space: normal;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

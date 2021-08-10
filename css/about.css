@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Viga&display=swap");
 .custom-nav .navbar-brand img {
-  width: 250px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
+  margin-left: 30px;
 }
 .custom-nav #navbarNav .navbar-nav .nav-item .nav-link {
-  font-family: "Montserrat", sans-serif;
   color: black;
   text-transform: uppercase;
   font-weight: 700;
@@ -29,13 +29,37 @@
   border: none;
   padding: 0.1em 1em;
 }
+@media screen and (max-width: 992px) {
+  .custom-nav #navbarNav .navbar-nav .nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00559E;
+  }
+  .custom-nav #navbarNav .navbar-nav .nav-item .nav-link {
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+    color: white !important;
+    text-transform: none;
+  }
+  .custom-nav #navbarNav .navbar-nav .nav-item .nav-link:hover::after {
+    content: "";
+    opacity: 0;
+  }
+  .custom-nav #navbarNav .navbar-nav .nav-item .custom-btn {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+}
 
 .jumbotron {
   background-image: url(../image/woman.png);
   background-size: cover;
   height: 450px;
   position: relative;
-  margin-top: 120px;
   font-family: "Montserrat", sans-serif;
 }
 .jumbotron .container {

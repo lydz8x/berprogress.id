@@ -17,8 +17,9 @@ body:before {
 }
 
 .custom-nav .navbar-brand img {
-  width: 250px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
+  margin-left: 30px;
 }
 .custom-nav #navbarNav .navbar-nav .nav-item .nav-link {
   color: black;
@@ -41,9 +42,34 @@ body:before {
 }
 .custom-nav #navbarNav .navbar-nav .nav-item .custom-btn {
   color: white;
-  border-radius: 4em;
+  border-radius: 3em;
   border: none;
   padding: 0.1em 1em;
+}
+@media screen and (max-width: 992px) {
+  .custom-nav #navbarNav .navbar-nav .nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00559E;
+  }
+  .custom-nav #navbarNav .navbar-nav .nav-item .nav-link {
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+    color: white !important;
+    text-transform: none;
+  }
+  .custom-nav #navbarNav .navbar-nav .nav-item .nav-link:hover::after {
+    content: "";
+    opacity: 0;
+  }
+  .custom-nav #navbarNav .navbar-nav .nav-item .custom-btn {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
 }
 
 .form {
