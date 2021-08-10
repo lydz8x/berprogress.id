@@ -21,7 +21,7 @@ body:before {
     background-size: 45vmax;
   }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 576px) {
   body:before {
     background-position: center 120px;
     opacity: 0.2;
@@ -107,7 +107,7 @@ body:before {
   margin-top: 20px;
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 576px) {
   .custom-section h2 {
     font-size: 2.2rem;
     line-height: 45px;
