@@ -15,10 +15,21 @@ body:before {
   right: 0;
   z-index: -1;
 }
+@media screen and (max-width: 992px) {
+  body:before {
+    background-position: 20% 50%;
+    opacity: 0.8;
+  }
+}
+@media screen and (max-width: 576px) {
+  body:before {
+    opacity: 0;
+  }
+}
 
 .custom-nav .navbar-brand img {
-  width: 60px;
-  height: 60px;
+  width: 170px;
+  height: 50px;
   margin-left: 30px;
 }
 .custom-nav #navbarNav .navbar-nav .nav-item .nav-link {
@@ -78,8 +89,8 @@ body:before {
 }
 .form-log .log-in-form .title {
   font-family: "Viga", sans-serif;
-  margin-top: 40px;
-  margin-bottom: 50px;
+  margin-top: 50px;
+  margin-bottom: 40px;
   margin-left: 80px;
   text-transform: uppercase;
 }
@@ -122,6 +133,12 @@ body:before {
   margin-bottom: 20px;
   padding: 0 15px;
   text-transform: uppercase;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.form-log .btn-login:active {
+  box-shadow: none;
+  transform: translateY(5px);
+  transition: 0.1s;
 }
 .form-log a.to-signup {
   font-size: 0.7rem;
@@ -130,6 +147,30 @@ body:before {
 }
 .form-log a.to-signup:hover {
   color: black;
+}
+@media screen and (max-width: 992px) {
+  .form-log {
+    margin-left: 50%;
+    margin-top: 10%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .form-log {
+    margin-left: 30%;
+    margin-top: 15%;
+  }
+  .form-log .log-in-form .title {
+    margin-left: auto 0;
+    font-size: 1.8rem;
+    text-decoration: underline rgba(160, 160, 160, 0.9);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .form-log .btn-login {
+    background-color: #0275D8;
+    border-radius: 3em;
+    font-size: 1.1rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
 }
 
 /*# sourceMappingURL=login.css.map */

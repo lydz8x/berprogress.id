@@ -7,7 +7,7 @@ body:before {
   background-image: url(../image/learning-amico.png);
   background-position: 75% 60%;
   background-repeat: no-repeat;
-  background-size: 30vmax;
+  background-size: 35vmax;
   position: absolute;
   top: 0;
   left: 0;
@@ -85,7 +85,7 @@ body:before {
 }
 
 .custom-section {
-  margin-top: 50px;
+  margin-top: 80px;
   margin-left: 50px;
 }
 .custom-section h2 {
