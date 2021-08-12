@@ -15,7 +15,7 @@ body:before {
   right: 0;
   z-index: -1;
 }
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 992px) {
   body:before {
     background-size: 40vmax;
     opacity: 0.4;
@@ -139,7 +139,7 @@ body:before {
 .form-up .sign-up-form .input-field .fa-caret-down {
   cursor: pointer;
 }
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 992px) {
   .form-up .sign-up-form .input-field .check,
 .form-up .sign-up-form .input-field label,
 .form-up .sign-up-form .input-field a {
@@ -170,7 +170,7 @@ body:before {
 .form-up a.to-login:hover {
   color: black;
 }
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 992px) {
   .form-up a.to-login {
     color: #000000;
   }
@@ -186,11 +186,19 @@ body:before {
     text-decoration: underline rgba(160, 160, 160, 0.9);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
+  .form-up .sign-up-form .input-field .fa-caret-down {
+    opacity: 0;
+  }
   .form-up .btn-sign-up {
     background-color: #0275D8;
     border-radius: 3em;
     font-size: 1.1rem;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+@media screen and (max-width: 410px) {
+  .form-up {
+    margin-left: 17%;
   }
 }
 

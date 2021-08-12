@@ -15,10 +15,28 @@ body:before {
   right: 0;
   z-index: -1;
 }
+@media screen and (max-width: 990px) {
+  body:before {
+    background-position: 27% 54%;
+    background-size: 35vmax;
+  }
+}
+@media screen and (max-width: 576px) {
+  body:before {
+    background-position: center;
+    background-size: 65vmax;
+    opacity: 25%;
+  }
+}
+@media screen and (max-width: 410px) {
+  body:before {
+    background-size: 60vmax;
+  }
+}
 
 .custom-nav .navbar-brand img {
-  width: 60px;
-  height: 60px;
+  width: 170px;
+  height: 50px;
   margin-left: 30px;
 }
 .custom-nav #navbarNav .navbar-nav .nav-item .nav-link {
@@ -72,9 +90,17 @@ body:before {
   }
 }
 
+.container h1 {
+  font-family: "MOntserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 50px;
+  margin-left: 35%;
+}
+
 .form {
   margin-left: 50%;
-  margin-top: 60px;
+  margin-top: 80px;
 }
 .form .input-field {
   margin-top: 20px;
@@ -124,6 +150,60 @@ body:before {
   font-weight: normal;
   margin-top: 50px;
   word-spacing: inherit;
+}
+
+@media screen and (max-width: 990px) {
+  .container h1 {
+    margin-left: 30%;
+    text-decoration: underline rgba(160, 160, 160, 0.9);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .footer p {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: 25px;
+  }
+  .footer p span {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container h1 {
+    margin-left: 25%;
+    font-size: 2.4rem;
+  }
+
+  .form {
+    margin-top: 60px;
+    margin-left: 25%;
+  }
+
+  .footer .cp-right {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 410px) {
+  .container h1 {
+    margin-left: 20%;
+    font-size: 2.2rem;
+  }
+
+  .form {
+    margin-left: 18%;
+  }
+
+  .footer p {
+    font-size: 0.8rem;
+    margin-top: 25px;
+  }
+  .footer p span {
+    font-size: 9px;
+  }
+  .footer .cp-right {
+    font-size: 8px;
+  }
 }
 
 /*# sourceMappingURL=contact.css.map */
